@@ -1,0 +1,21 @@
+{
+  "name": "nodeapi",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "prestart": "yarn build",
+    "start": "node ./bld/app.js",
+    "watch": "./node_modules/.bin/nodemon --watch src -e js,ts --exec \"yarn start\""
+  },
+  "dependencies": {
+    "@types/express": "^4.0.37",
+    "@types/express-graphql": "^0.0.34",
+    "@types/graphql": "^0.11.5",
+    "express": "^4.16.1",
+    "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
+    "nodemon": "^1.12.1",
+    "typescript": "^2.5.3"
+  }
+}
