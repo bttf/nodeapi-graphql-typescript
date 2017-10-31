@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "build": "./node_modules/.bin/tsc",
+    "build": "tsc",
     "prestart": "yarn build",
     "start": "node ./bld/app.js",
-    "watch": "./node_modules/.bin/nodemon --watch src -e js,ts --exec \"yarn start\""
+    "watch": "nodemon --watch src -e js,ts --exec \"yarn start\""
   },
   "dependencies": {
     "@types/express": "^4.0.37",
